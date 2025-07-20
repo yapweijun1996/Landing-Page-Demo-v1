@@ -31,11 +31,6 @@ body.sidebar-open {
   border: 0;
 }
 
-.card-content{
-padding-left: 10px;
-
-}
-
 header {
   position: fixed;
   top: 0;
@@ -147,7 +142,6 @@ main {
   border: 1px solid var(--card-border);
   font-size: 1rem;
   resize: none;
-  box-sizing: border-box;
 }
 
 .prompt-form button {
@@ -566,130 +560,4 @@ footer {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 16px;
-}
-
-/* Blog Section */
-.blog-section {
-  margin: 48px 0;
-}
-
-.blog-section h2 {
-  text-align: center;
-  margin-bottom: 24px;
-  font-size: 2rem;
-}
-
-.blog-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 24px;
-}
-
-.blog-card {
-  background-color: var(--card-bg);
-  border: 1px solid var(--card-border);
-  border-radius: 12px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
-.blog-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.blog-card-content {
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
-
-.blog-card-content h3 {
-  margin-top: 0;
-  margin-bottom: 8px;
-}
-
-.blog-card-content p {
-  flex-grow: 1;
-  margin-bottom: 16px;
-}
-
-.blog-card-content a {
-  color: var(--primary-color);
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* New Hero Section */
-.new-hero {
-  padding: 64px 0;
-}
-
-.new-hero .hero-content {
-  display: flex;
-  align-items: center;
-  gap: 48px;
-}
-
-.new-hero .hero-text {
-  flex: 1;
-}
-
-.new-hero .hero-text h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 16px;
-}
-
-.new-hero .hero-text p {
-  font-size: 1.125rem;
-  color: var(--text-color);
-  margin-bottom: 32px;
-}
-
-.new-hero .hero-buttons {
-  display: flex;
-  gap: 16px;
-}
-
-.new-hero .cta-button {
-  padding: 12px 24px;
-  border-radius: 24px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.new-hero .cta-button.primary {
-  background-color: var(--primary-color);
-  color: white;
-}
-
-.new-hero .cta-button.secondary {
-  background-color: var(--button-bg);
-  color: var(--text-color);
-  border: 1px solid var(--card-border);
-}
-
-.new-hero .hero-image {
-  flex: 1;
-}
-
-.new-hero .hero-image img {
-  width: 100%;
-  border-radius: 12px;
-}
-
-@media (max-width: 768px) {
-  .new-hero .hero-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .new-hero .hero-buttons {
-    justify-content: center;
-  }
 }
